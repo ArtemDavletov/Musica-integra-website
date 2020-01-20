@@ -1,0 +1,21 @@
+html,body,header, #intro{
+    height: 100%;
+}
+
+#intro {
+    background: url(./img/image.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.top-nav-collapse{
+    background-color: black;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse){
+        background: black
+    }
+}
+
+h2, h4 {
+    margin: 200px;
+}

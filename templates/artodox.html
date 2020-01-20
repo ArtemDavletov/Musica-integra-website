@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block extrahead %}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    {% endblock extrahead %}
+    {% load bootstrap4 %}
+    <script src="{% bootstrap_jquery_url %}"></script>
+    {% bootstrap_javascript %}
+    {% bootstrap_css %}
+    <title>АРТОДОКС</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a href="{% url 'main' %}" class="navbar-brand">Musica Integra</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                        aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a href="{% url 'incubator' %}" class="nav-link waves-effect waves-light">INКУБАТОР</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'artodox' %}" class="nav-link waves-effect waves-light">АРТОДОКС</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="intro" class="view">
+            <div class="mask rgba-black-strong">
+                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+                    <div class="row d-flex justify-content-center text-center">
+                        <div class="col-md-10">
+                            <h2 class="display-4 font-weight-bold text-white pt-5 mb-2">
+                                АРТОДОКС
+                            </h2>
+                            <h4 class="text-white my-4">
+                                Форум учителей и педагогов о музыкальном образовании.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-5">
+        <div class="container">
+            <section id="best-features" class="center-text">
+                <h2 class="mb-5 font-weight-bold">АРТОДОКС</h2>
+                <div class="row d-flex justify-content-center mb-4">
+                    <div class="col-md-8">
+                        <p class="grey-text">
+                        Городское учебно-методическое объединение методистов и педагогов государственных учреждений дополнительного образования «Электронные клавишные инструменты»
+                        </p>
+                        <p> <a href="../static/files/artodox/ДАВЛЕТОВА_plan-gumo-2019-2020.pdf">План работы на 2019-2020 г.</a></p>
+                        <p> <a href="../static/files/artodox/ДАВЛЕТОВА_План%20тематических%20встреч%20и%20мероприятий%20ГУМО.pdf">План тематических встреч и мероприятий.</a></p>
+
+                        <hr class="my-5">
+
+                        <p>Городская научно-практическая конференция «Формирование информационной образовательной среды педагога ДО: инновационные решения»</p>
+                        <p> <a href="../static/files/artodox/Положение_Городская%20конф_ГУМО_9окт2019.pdf">Положение о проведении конференции</a></p>
+                        <p> <a href="../static/files/artodox/Программа%20конференции%20ГУМО_09.10.19.pdf">Программа конференции</a></p>
+                        <p> <a href="../static/files/artodox/Фотографии_Городская%20конференция%20ГУМО_09.10.19.pdf">Фотографии</a></p>
+
+                        <hr class="my-5">
+
+                        <p>Всероссийская научно-практическая конференция в рамках Всероссийского фестиваля-конкурса «Музыкальные диалоги»</p>
+                        <p> <a href="../static/files/artodox/Положение_Городская конф_ГУМО_9окт2019.pdf">Положение о проведении конференции</a></p>
+                        <p> <a href="../static/files/artodox/Программа%20конференции%20ГУМО_09.10.19.pdf">Программа конференции</a></p>
+
+                        <hr class="my-5">
+
+                        <p>XVIII Международная научно-практическая конференция «Современное музыкальное образование»</p>
+                        <p> <a href="../static/files/artodox/Положение%20о%20проведении%20конференции%20СМО-2019.pdf">Положение о проведении конференции</a></p>
+                        <p> <a href="../static/files/artodox/Третий%20междунар%20Семинар%202019.pdf">Третий международный научный семинар «Язык, музыка и компьютерные технологии». Информационное письмо.</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
