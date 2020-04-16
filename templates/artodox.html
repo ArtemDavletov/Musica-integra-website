@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(62008255, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/62008255" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8">
     {% load bootstrap4 %}
     <script src="{% bootstrap_jquery_url %}"></script>
@@ -23,10 +37,10 @@
                 <div class="collapse navbar-collapse" id="basicExampleNav">
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="nav-item">
-                            <a href="{% url 'incubator' %}" class="nav-link waves-effect waves-light">INКУБАТОР</a>
+                            <a href="{% url 'incubator' %}" class="nav-link waves-effect waves-light">Детское творчество</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{% url 'artodox' %}" class="nav-link waves-effect waves-light">АРТОДОКС</a>
+                            <a href="{% url 'artodox' %}" class="nav-link waves-effect waves-light">Сессионное обучение</a>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +53,7 @@
                     <div class="row d-flex justify-content-center text-center">
                         <div class="col-md-10">
                             <h2 class="display-4 font-weight-bold text-white pt-5 mb-2">
-                                АРТОДОКС
+                                Сессионное обучение
                             </h2>
                             <h4 class="text-white my-4">
                                 Форум учителей и педагогов о музыкальном образовании
@@ -53,26 +67,31 @@
     <main class="mt-5">
         <div class="container">
             <section id="best-features" class="center-text">
-                <h2 class="mb-5 font-weight-bold">АРТОДОКС</h2>
+                <h2 class="mb-5 font-weight-bold">Сессионное обучение</h2>
                 <div class="row d-flex justify-content-center mb-4">
                     <div class="col-md-8">
                         <p class="grey-text">
-                        Есть мнение, что мы, музыкальные педагоги, постепенно превращаемся в О(А)ртодоксов.
-                        </p>
-                        <p>
-                        Не в смысле «правильности» (от греческого «ортос» (ὀρθός) - «прямой; правильный») своей музыкальной позиции, а в догматичности, неизменности, «одеревенелости» методов преподавания.
-                        </p>
-                        <p>
-                        Имея большой опыт в профессии, мы чувствуем: старые методики подвергаются сомнению, новые – недоверию. Стоит ли менять что-то в своей работе? А как посмотрит руководство? А коллеги? А что я получу взамен? Но ведь не дают  же работать! И набора нет! И дети слабые!
-                        </p>
-                        <p>
-                        Давайте попробуем любой тезис встретить анитезисом. Любой аргумент – контраргументом. Любой синтез промоем анализом.
-                        </p>
-                        <p>
-                        Возможно, острая полемика – это то, что нам нужно, чтобы впрыснуть адреналин в свою непростую работу. Сделать ее оптимистичнее, современнее. Тогда и дети станут обучаемыми, и коллеги отзывчивыми, и руководство - чутким. И мы – молодыми, красивыми, энергичными и уважаемыми…
+                            Сессия - это не только «живут студенты весело от сессии до сессии».
+                            Толковый словарь рассматривает сессию как совокупность повторяющиеся рабочих заседаний.
+                            А также ограниченный во времени период деятельности. В современных компьютерных реалиях «session» - это промежуток времени, охватывающий работу пользователя в интернете с момента открытия первой и до последней ссылок.
                         </p>
 
                         <hr class="my-5">
+
+                        <div class="box">
+                            <p><a href="../static/files/incubator/konkurs_demo_2020.pdf">Курсы повышения квалификации</a></p>
+                        </div>
+
+                        <div class="box">
+                            <p><a href="../static/files/incubator/konkurs_demo_2020.pdf">ГУМО</a></p>
+                        </div>
+
+                        <div class="box">
+                            <p><a href="../static/files/incubator/konkurs_demo_2020.pdf">Дистанционные курсы повышения квалификации</a></p>
+                        </div>
+
+                        <hr class="my-5">
+
                         <p><a href="../static/files/artodox/Городской_семинар_11_марта.pdf">
                             Городской семинар «Особенности работы над тембром в аранжировочных рабочих станциях Yamaha PSR-SX»
                         </a></p>

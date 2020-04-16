@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(62008255, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/62008255" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8">
     {% load bootstrap4 %}
     <script src="{% bootstrap_jquery_url %}"></script>
@@ -24,10 +38,10 @@
                 <div class="collapse navbar-collapse" id="basicExampleNav">
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="active">
-                            <a href="{% url 'incubator' %}" class="nav-link waves-effect waves-light">INКУБАТОР</a>
+                            <a href="{% url 'incubator' %}" class="nav-link waves-effect waves-light">Детское творчество</a>
                         </li>
                         <li class="active">
-                            <a href="{% url 'artodox' %}" class="nav-link waves-effect waves-light">АРТОДОКС</a>
+                            <a href="{% url 'artodox' %}" class="nav-link waves-effect waves-light">Сессионное обучение</a>
                         </li>
                     </ul>
                 </div>
