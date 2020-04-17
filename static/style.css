@@ -63,3 +63,15 @@ background-size       : cover;
 background-position-x : 50%;
 background-position-y : 50%;
 }
+
+TABLE {
+    width: 90%; /* Ширина таблицы */
+    border: 1px solid black; /* Рамка вокруг таблицы */
+    margin: 50px;
+   }
+
+TD {
+    valign: top;
+    align: left;
+    margin-top: 10px;
+}
