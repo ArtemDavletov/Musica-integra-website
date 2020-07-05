@@ -25,7 +25,7 @@ SECRET_KEY = '##+4ftg7q+n)-ie%moa7_7xt7=6fi*p)*3ae=nux(sm$02ne*6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['musica-integra.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['musica-integra.herokuapp.com', 'musicaintegra.ru', 'www.musicaintegra.ru']
 
 
 # Application definition
