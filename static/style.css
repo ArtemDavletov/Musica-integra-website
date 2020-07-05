@@ -1,10 +1,16 @@
-html,body,header, #intro{
+html, body, header {
     height: 100%;
+}
+
+header {
+    vertical-align: bottom;
+    padding: 0;
 }
 
 #intro {
     background: url(./img/image.jpg) no-repeat center center fixed;
     background-size: cover;
+    height: 80%;
 }
 
 .top-nav-collapse{
@@ -16,8 +22,13 @@ html,body,header, #intro{
     }
 }
 
-h2, h4 {
+header h2, h4 {
     margin: 200px;
+}
+
+.mt-5 h2, h4 {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .box {
@@ -33,7 +44,7 @@ h2, h4 {
   float: left;
   width: 50%;
   padding: 10px;
-    background-size: contain;
+  background-size: contain;
 }
 
 /* Style the images inside the grid */
@@ -75,3 +86,5 @@ TD {
     align: left;
     margin-top: 10px;
 }
+
+/* Navbar */
