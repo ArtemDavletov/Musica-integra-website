@@ -26,6 +26,18 @@ def not_ready(request):
     return render(request, "error/not_ready.html")
 
 
+def inspiration(request):
+    return render(request, "inspiration.html")
+
+
+def playing(request):
+    return render(request, "playing.html")
+
+
+def teachers(request):
+    return render(request, "teachers.html")
+
+
 def e_handler404(request, exception):
     # context = RequestContext(request)
     # response = render("error/not_ready.html", context)

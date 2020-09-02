@@ -35,6 +35,7 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{% url 'inspiration' %}">пространство ВДОХНОВЕНИЯ</a>
                         <a class="dropdown-item" href="{% url 'not_ready' %}">МУЗЫКА</a>
                         <a class="dropdown-item" href="{% url 'not_ready' %}">МЕДИА</a>
                     </div>
@@ -46,7 +47,8 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'children' %}">Детское творчество</a>
+                        <a class="dropdown-item" href="{% url 'playing' %}">человек ИГРАЮЩИЙ</a>
+                        <a class="dropdown-item" href="{% url 'children' %}">ДЕТСКОЕ ТВОРЧЕСТВО</a>
                         <a class="dropdown-item" href="{% url 'not_ready' %}">ПЕДАГОГ-ДЕМОНСТРАТОР</a>
                     </div>
                 </li>
@@ -57,6 +59,7 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{% url 'teachers' %}">педагогиУМ</a>
                         <a class="dropdown-item" href="{% url 'not_ready' %}">МЕТОДИЧЕСКИЕ РАЗРАБОТКИ</a>
                         <a class="dropdown-item" href="{% url 'session' %}">СЕССИОННОЕ ОБУЧЕНИЕ</a>
                     </div>
@@ -75,27 +78,6 @@
             </ul>
             </div>
         </nav>
-{#        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">#}
-{#            <div class="container">#}
-{#                <a href="{% url 'main' %}" class="navbar-brand">Musica Integra</a>#}
-{##}
-{#                <button class="navbar-toggler" type="button" data-toggle="collapse"#}
-{#                        data-target="#basicExampleNav" aria-controls="basicExampleNav"#}
-{#                        aria-expanded="false" aria-label="Toggle Navigation">#}
-{#                    <span class="navbar-toggler-icon"></span>#}
-{#                </button>#}
-{#                <div class="collapse navbar-collapse" id="basicExampleNav">#}
-{#                    <ul class="navbar-nav mr-auto smooth-scroll">#}
-{#                        <li class="active">#}
-{#                            <a href="{% url 'children' %}" class="nav-link waves-effect waves-light">Детское творчество</a>#}
-{#                        </li>#}
-{#                        <li class="active">#}
-{#                            <a href="{% url 'session' %}" class="nav-link waves-effect waves-light">Сессионное обучение</a>#}
-{#                        </li>#}
-{#                    </ul>#}
-{#                </div>#}
-{#            </div>#}
-{#        </nav>#}
 
         <div class="view">
             <div class="mask rgba-black-strong">
