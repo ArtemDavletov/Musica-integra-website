@@ -10,6 +10,8 @@ urlpatterns = [
     path('teachers/', views.teachers, name='teachers'),
     path('inspiration/', views.inspiration, name='inspiration'),
     path('playing/', views.playing, name='playing'),
+    path('children_playing/', views.children_playing, name='children_playing'),
+    path('konkurces/', views.konkurces, name='konkurces'),
 
     path('not_ready/', views.not_ready, name='not_ready'),
     path('not_found/', views.e_handler404, name='not_found'),

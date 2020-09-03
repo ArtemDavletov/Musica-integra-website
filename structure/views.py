@@ -38,6 +38,13 @@ def teachers(request):
     return render(request, "teachers.html")
 
 
+def children_playing(request):
+    return render(request, "playing/children_playing.html")
+
+def konkurces(request):
+    return render(request, "playing/konkurces.html")
+
+
 def e_handler404(request, exception):
     # context = RequestContext(request)
     # response = render("error/not_ready.html", context)
