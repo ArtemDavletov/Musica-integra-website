@@ -13,9 +13,16 @@ header {
     height: 80%;
 }
 
+#intro_dif_image {
+    background: url(./img/cutted_image.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 30%;
+}
+
 .top-nav-collapse{
     background-color: black;
 }
+
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse){
         background: black
@@ -62,45 +69,44 @@ header h2, h4 {
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  background-size: contain;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    background-size: contain;
 }
 
 /* Style the images inside the grid */
 .column img {
-  opacity: 0.8;
-  cursor: pointer;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .column img:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .photoBorder {
-margin-top: 20px;
-width: 180px;
-height: 180px;
-
-background-repeat     : no-repeat;
-background-size       : cover;
-background-position-x : 50%;
-background-position-y : 50%;
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+    background-repeat     : no-repeat;
+    background-size       : cover;
+    background-position-x : 50%;
+    background-position-y : 50%;
 }
 
 TABLE {
     width: 90%; /* Ширина таблицы */
     border: 1px solid black; /* Рамка вокруг таблицы */
     margin: 50px;
-   }
+}
 
 TD {
     valign: top;
@@ -122,12 +128,12 @@ TD {
     transition: opacity .3s 1s;
 }
 .dropdown-item:hover + .dropdown-menu {
- display: block;
- opacity: 1;
- transition: opacity .3s 1s;
+    display: block;
+    opacity: 1;
+    transition: opacity .3s 1s;
 }
 .dropdown-menu:hover{
- display:block;
+    display:block;
 }
 
 .dropdown-item.submenu::after {

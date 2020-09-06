@@ -41,8 +41,45 @@ def teachers(request):
 def children_playing(request):
     return render(request, "playing/children_playing.html")
 
+
 def konkurces(request):
     return render(request, "playing/konkurces.html")
+
+
+def gumo(request):
+    return render(request, "teachers/session/gumo.html")
+
+
+def courses(request):
+    return render(request, "teachers/session/course.html")
+
+
+def konferences(request):
+    return render(request, "teachers/session/konferences.html")
+
+
+def remote(request):
+    return render(request, "teachers/session/remote.html")
+
+
+def course_materials(request):
+    return render(request, "teachers/method/course_materials.html")
+
+
+def methods_dev(request):
+    return render(request, "teachers/method/methods_dev.html")
+
+
+def notes(request):
+    return render(request, "teachers/method/notes.html")
+
+
+def publications(request):
+    return render(request, "teachers/method/publications.html")
+
+
+def videoconf_materials(request):
+    return render(request, "teachers/method/videoconf_materials.html")
 
 
 def e_handler404(request, exception):

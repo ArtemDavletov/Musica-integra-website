@@ -72,20 +72,20 @@
                         <a class="dropdown-item submenu" href="{% url 'not_ready' %}">МЕТОДИЧЕСКИЕ МАТЕРИАЛЫ</a>
 
                         <div class="dropdown-menu">
-			                <a class="dropdown-item" href="#">Нотные пособия</a>
-                            <a class="dropdown-item" href="#">Публикации</a>
-                            <a class="dropdown-item" href="#">Методические разработки</a>
-                            <a class="dropdown-item" href="#">Учебные материалы курсов</a>
-                            <a class="dropdown-item" href="#">Материалы видеоконференций, вебинаров</a>
+			                <a class="dropdown-item" href="{% url 'notes' %}">Нотные пособия</a>
+                            <a class="dropdown-item" href="{% url 'publications' %}">Публикации</a>
+                            <a class="dropdown-item" href="{% url 'methods_dev' %}">Методические разработки</a>
+                            <a class="dropdown-item" href="{% url 'course_materials' %}">Учебные материалы курсов</a>
+                            <a class="dropdown-item" href="{% url 'videoconf_materials' %}">Материалы видеоконференций, вебинаров</a>
                         </div>
 
                         <a class="dropdown-item submenu" href="{% url 'session' %}">СЕССИОННОЕ ОБУЧЕНИЕ</a>
 
                         <div class="dropdown-menu">
-			                <a class="dropdown-item" href="#">Курсы повышения квалификации</a>
-                            <a class="dropdown-item" href="#">ГУМО</a>
-                            <a class="dropdown-item" href="#">Дистанционное обучение</a>
-                            <a class="dropdown-item" href="#">Конференции</a>
+			                <a class="dropdown-item" href="{% url 'courses' %}">Курсы повышения квалификации</a>
+                            <a class="dropdown-item" href="{% url 'gumo' %}">ГУМО</a>
+                            <a class="dropdown-item" href="{% url 'remote' %}">Дистанционное обучение</a>
+                            <a class="dropdown-item" href="{% url 'konferences' %}">Конференции</a>
                         </div>
                     </div>
                 </li>
