@@ -82,6 +82,10 @@ def videoconf_materials(request):
     return render(request, "teachers/method/videoconf_materials.html")
 
 
+def music(request):
+    return render(request, "inspiration/music.html")
+
+
 def e_handler404(request, exception):
     # context = RequestContext(request)
     # response = render("error/not_ready.html", context)

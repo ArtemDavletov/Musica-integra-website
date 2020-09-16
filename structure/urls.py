@@ -24,6 +24,8 @@ urlpatterns = [
     path('publications/', views.publications, name='publications'),
     path('videovonfmat/', views.videoconf_materials, name='videoconf_materials'),
 
+    path('music/', views.music, name='music'),
+
     path('not_ready/', views.not_ready, name='not_ready'),
     path('not_found/', views.e_handler404, name='not_found'),
     path('server_error/', views.e_handler500, name='server_error'),

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(62008255, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+       });
+    </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/62008255" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+    {% load bootstrap4 %}
+    <script src="{% bootstrap_jquery_url %}"></script>
+    {% bootstrap_javascript %}
+    {% bootstrap_css %}
+    <title>Musica Integra</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta name="yandex-verification" content="f651d4e5b1670abc" />
+</head>
+<body>
+    <header id="intro_dif_image">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light scrolling-navbar" style="min-height: 80px;">
+            <a class="navbar-brand" href="{% url 'main' %}">Musica Integra</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button><div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        пространство ВДОХНОВЕНИЯ
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{% url 'inspiration' %}">пространство ВДОХНОВЕНИЯ</a>
+                        <a class="dropdown-item" href="{% url 'not_ready' %}">МУЗЫКА</a>
+                        <a class="dropdown-item" href="{% url 'not_ready' %}">МЕДИА</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        человек ИГРАЮЩИЙ
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{% url 'playing' %}">человек ИГРАЮЩИЙ</a>
+                        <a class="dropdown-item submenu" href="{% url 'children' %}">ДЕТСКОЕ ТВОРЧЕСТВО</a>
+
+                        <div class="dropdown-menu">
+			                <a class="dropdown-item" href="{% url 'children_playing' %}">Дети играют</a>
+                            <a class="dropdown-item" href="{% url 'konkurces' %}">Конкурсы</a>
+                            <a class="dropdown-item" href="#">Проекты</a>
+                        </div>
+
+                        <a class="dropdown-item" href="{% url 'not_ready' %}">ПЕДАГОГ-ДЕМОНСТРАТОР</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        педагогиУМ
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{% url 'teachers' %}">педагогиУМ</a>
+                        <a class="dropdown-item submenu" href="{% url 'not_ready' %}">МЕТОДИЧЕСКИЕ МАТЕРИАЛЫ</a>
+
+                        <div class="dropdown-menu">
+			                <a class="dropdown-item" href="{% url 'notes' %}">Нотные пособия</a>
+                            <a class="dropdown-item" href="{% url 'publications' %}">Публикации</a>
+                            <a class="dropdown-item" href="{% url 'methods_dev' %}">Методические разработки</a>
+                            <a class="dropdown-item" href="{% url 'course_materials' %}">Учебные материалы курсов</a>
+                            <a class="dropdown-item" href="{% url 'videoconf_materials' %}">Материалы видеоконференций, вебинаров</a>
+                        </div>
+
+                        <a class="dropdown-item submenu" href="{% url 'session' %}">СЕССИОННОЕ ОБУЧЕНИЕ</a>
+
+                        <div class="dropdown-menu">
+			                <a class="dropdown-item" href="{% url 'courses' %}">Курсы повышения квалификации</a>
+                            <a class="dropdown-item" href="{% url 'gumo' %}">ГУМО</a>
+                            <a class="dropdown-item" href="{% url 'remote' %}">Дистанционное обучение</a>
+                            <a class="dropdown-item" href="{% url 'konferences' %}">Конференции</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ПРОФИли участников
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{% url 'not_ready' %}">ФОРУМ педагогических идей</a>
+                        <a class="dropdown-item" href="{% url 'not_ready' %}">ПЕРСОНАЛИИ</a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main class="mt-5">
+        <div class="container">
+            <section id="best-features" class="center-text">
+                <h2 class="mb-5 font-weight-bold">МУЗЫКА</h2>
+                <div class="row d-flex justify-content-center mb-4">
+                    <div class="col-md-8">
+                        <p>
+                            РАЗДЕЛ «АРАНЖИРОВКИ»
+                        </p>
+                        <p>
+                            Реме́йк (от англ. remake — «переделка») —термин, означающий выпуск новых версий
+                            уже существующих произведений искусства с видоизменением или добавлением в них собственных характеристик. Ремейк не цитирует и не пародирует источник, а наполняет его новым и актуальным содержанием, однако «с оглядкой» на
+                            <a href="https://kartaslov.ru/" target="_blank">образец</a>
+                        </p>
+
+                        <p>КОМПОЗИЦИИ</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    А. Вивальди «Времена года». «Зима» – Макс Рихтер Фильм «Танцовщица» («La danceuse»)</br>
+                                    А. Вивальди «Зима» 2 – Макс Рихтер Фильм «Танцовщица» («La dance»)</br>
+                                    А. Вивальди «Весна» – Макс Рихтер Фильм «Танцовщица» («La dance»)</br>
+                                    <a href="https://muzofond.fm/collections/ost/ost%20la%20danseuse" target="_blank">Ссылка</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://web.gybka.com/song/3045044/MOBY_-_MISSION_IMPOSSIBLE" target="_blank">Х. Циммер «Миссия невыполнима» Музыка из фильма – Moby «Mission Impossible»</a><br/>
+                                    <a href="https://5music.me/sound/main+theme+d3stra+and+yastreb+remix+radio+edit" target="_blank">Х. Циммер «Миссия невыполнима» – d3stra and yastreb remix radio edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://web.gybka.com/song/276759/Moby_-_James_Bond_Theme_cj_bolland_remix/" target="_blank">М. Норман Бондиана Фильм «Доктор Ноу» Главная тема - Moby «James Bond»</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="https://inkompmusic.ru/?song=%D0%90%D0%BB%D1%8C%D1%84%D1%80%D0%B5%D0%B4+%D0%A8%D0%BD%D0%B8%D1%82%D0%BA%D0%B5+-+%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80+%D0%B8+%D0%9C%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0%2C+1994%D0%B3" target="_blank">М. Равель «Болеро» – А. Шнитке «Болеро» Музыка из фильма «Мастер и Маргарита»</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="https://web.gybka.com/song/106986776/Burre_I.S.Bah_-_Dzhetro_Tall/" target="_blank">И.-С. Бах Сюита для лютни – Jetro Tull «Бурре» (Bourée)</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="https://web.gybka.com/song/128955544/Kirill_Rihter_-_Polyot_Matryoshek/" target="_blank">Н. А. Римский-Корсаков «Полет шмеля» – Кирилл Рихтер «Полет матрешек»</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="https://hotplayer.ru/?s=%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BB%D0%BE%D0%B1%D0%BE%D1%81%20-%20%D0%B4%D0%B6%D0%BE%D0%BD%20%D1%83%D0%B8%D0%BB%D1%8C%D1%8F%D0%BC%D1%81" target="_blank">Э. Вила-Лобос Прелюдия №4 ми минор – Джон Вильямс киномузыка</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="https://web.gybka.com/song/117656821/Shigeru_Umebayashi_-_2046_Main_Theme_OST_2046/" target="_blank">С. Умибаяши фильм «2046» Главная тема – Shigeru Umebayashi Main Theme Rumba</a><br/>
+                                    <a href="https://web.gybka.com/song/164243727/Shigeru_Umebayashi_-_2046_Theme_Rumba_Version/" target="_blank">Version</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="http://web.gybka.com/song/29589950/Sky_-_Alla_Turca_Rondo/" target="_blank">В. А. Моцарт Соната № 11 Рондо «Alla Turca» – SKY «Alla Turca. Rondo»</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    К. Альмаран «Historia de un amor» -<br/>
+                                    <a href="http://web.gybka.com/artist/5018428-Cinema_Serenade_Ensemble/" target="_blank">Cinema Serenade Ensemble «Historia de un amor»</a><br/>
+                                    <a href="http://web.gybka.com/song/113755362/Dalida_-_Histoire_d_un_amour_Historia_de_un_Amor_Version_fran_aise_Historia_de_un_Amor_Version_fr/" target="_blank">Dalida «Historia de un amor»</a><br/>
+                                    <a href="http://web.gybka.com/song/6754686/Hulio_Eglesias_-_Historia_De_Un_Amor/" target="_blank">Hulio Eglesias «Historia de un amor»</a><br/>
+                                    <a href="http://web.gybka.com/artist/875859-Giovanni_Marradi_Boleros_1992/" target="_blank">Giovanni Marrandi «Historia de un amor»</a><br/>
+                                    <a href="http://web.gybka.com/song/28767545/Zaz_-_La_Historia_De_Un_Amor/" target="_blank">Zaz «Historia de un amor»</a><br/>
+                                    <a href="https://zaycev.net/pages/164279/16427987.shtml" target="_blank">Клавдия Шульженко «Первая встреча»</a><br/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="http://web.gybka.com/song/22821559/Eduard_Artemev_i_Rossijskij_orkestr_sinematografa_-_Pohod_h_f_Sibiriada_ost/" target="_blank">Э. Артемьев «Поход» фильм «Сибириада» исп. Российский оркестр синематографа</a><br/>
+                                    <a href="https://inkompmusic.ru/?song=%D0%AD%D0%B4%D1%83%D0%B0%D1%80%D0%B4+%D0
+%90%D1%80%D1%82%D0%B5%D0%BC%D1%8C%D0%B5%D0%B2+%E2%80%93+%D0
+%9F%D0%BE%D1%85%D0%BE%D0%B4+%28OST+%D0%A1%D0%B8%D0%B1%D0%B8
+%D1%80%D0%B8%D0%B0%D0%B4%D0%B0%29
+https://zaycev.net/search.html?spa=true&trackId=434694&query_search=%D0%AD.%20%D0
+%90%D1%80%D1%82%D0%B5%D0%BC%D1%8C%D0%B5%D0%B2%20%D0%9F%D0%B
+E%D1%85%D0%BE%D0%B4%20%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D0%B8%
+D0%B0%D0%B4%D0%B0" target="_blank">Э. Артемьев «Космическая музыка» «Поход»</a><br/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="https://inkompmusic.ru/?song=%D0%9F%D0%BE%D0%BB%D1%8E%D1%88%D0%BA%D0%BE+%D0%BF%D0%BE%D0%BB%D0%B5" target="_blank">«Полюшко, поле» русская народная песня</a><br/>
+                                    <a href="https://inkompmusic.ru/?song=Aeterna+%E2%80%93+%D0%9F%D0%BE%D0%BB%D1%8E%D1%88%D0%BA%D0%BE-%D0%BF%D0%BE%D0%BB%D0%B5" target="_blank">Aeterna</a><br/>
+                                    <a href="https://inkompmusic.ru/?song=Jefferson+Airplane+%E2%80%93+Meadowlands+%28%D0%9F%D0%BE%D0%BB%D1%8E%D1%88%D0%BA%D0%BE-%D0%BF%D0%BE%D0%BB%D0%B5%29" target="_blank">Jefferson Airplane</a><br/>
+                                    <a href="https://inkompmusic.ru/?song=NippanDub+%E2%80%93+Lai+Lai+%2F+%D0%9F%D0%BE%D0%BB%D1%8E%D1%88%D0%BA%D0%BE-%D0%9F%D0%BE%D0%BB%D0%B5+%28djSuleimann+indaMix%29" target="_blank">Nippan Dub</a><br/>
+                                    <a href="https://inkompmusic.ru/?song=Viktoria+Tolstoy+%E2%80%93+Little+Pretty+%28%D0%9F%D0%BE%D0%BB%D1%8E%D1%88%D0%BA%D0%BE-%D0%BF%D0%BE%D0%BB%D0%B5%29" target="_blank">Victoria Tolstoy</a><br/>
+                                    <a href="https://inkompmusic.ru/?song=%D0%9F%D0%B8%D0%BA%D0%BD%D0%B8%D0%BA+%E2%80%93+%D0%9F%D0%BE%D0%BB%D1%8E%D1%88%D0%BA%D0%BE+-+%D0%BF%D0%BE%D0%BB%D0%B5+Heroic+Version" target="_blank">Пикник</a><br/>
+                                    <a href="https://inkompmusic.ru/?song=%D0%9A%D0%90%D0%9F%D0%9F%D0%A1%D0%90+%E2%80%93+%D0%9F%D0%BE%D0%BB%D1%8E%D1%88%D0%BA%D0%BE-%D0%BF%D0%BE%D0%BB%D0%B5" target="_blank">КАППСА</a><br/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <a href="http://lightaudio.ru/mp3/giorgio%20moroder%20-%20the%20due" target="_blank">И. С. Бах «Менуэт» из «Нотной тетради А. М. Бах» - Дж. Мородер «Дуэль»</a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="../static/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
