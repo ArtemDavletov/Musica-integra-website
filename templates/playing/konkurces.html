@@ -23,33 +23,31 @@
     {% bootstrap_javascript %}
     {% bootstrap_css %}
     <title>Musica Integra</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../../static/style.css">
     <meta name="yandex-verification" content="f651d4e5b1670abc" />
 </head>
 <body>
-    <header id="intro">
+    <header id="intro_dif_image">
         <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light scrolling-navbar" style="min-height: 80px;">
             <a class="navbar-brand" href="{% url 'main' %}">Musica Integra</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
             </button><div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        пространство ВДОХНОВЕНИЯ
+                        <span style="vertical-align: sub">пространство <strong>ВДОХНОВЕНИЯ</strong></span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'inspiration' %}">пространство ВДОХНОВЕНИЯ</a>
-                        <a class="dropdown-item" href="{% url 'not_ready' %}">МУЗЫКА</a>
+                        <a class="dropdown-item" href="{% url 'music' %}">МУЗЫКА</a>
                         <a class="dropdown-item" href="{% url 'not_ready' %}">МЕДИА</a>
                     </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        человек ИГРАЮЩИЙ
+                        <span style="vertical-align: sub">человек <strong>ИГРАЮЩИЙ</strong></span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'playing' %}">человек ИГРАЮЩИЙ</a>
                         <a class="dropdown-item submenu" href="{% url 'children' %}">ДЕТСКОЕ ТВОРЧЕСТВО</a>
 
                         <div class="dropdown-menu">
@@ -64,35 +62,34 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        педагогиУМ
+                        <span style="vertical-align: sub">педагоги<strong><span style="vertical-align: super">УМ</span></strong></span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'teachers' %}">педагогиУМ</a>
                         <a class="dropdown-item submenu" href="{% url 'not_ready' %}">МЕТОДИЧЕСКИЕ МАТЕРИАЛЫ</a>
 
                         <div class="dropdown-menu">
-			                <a class="dropdown-item" href="#">Нотные пособия</a>
-                            <a class="dropdown-item" href="#">Публикации</a>
-                            <a class="dropdown-item" href="#">Методические разработки</a>
-                            <a class="dropdown-item" href="#">Учебные материалы курсов</a>
-                            <a class="dropdown-item" href="#">Материалы видеоконференций, вебинаров</a>
+			                <a class="dropdown-item" href="{% url 'notes' %}">Нотные пособия</a>
+                            <a class="dropdown-item" href="{% url 'publications' %}">Публикации</a>
+                            <a class="dropdown-item" href="{% url 'methods_dev' %}">Методические разработки</a>
+                            <a class="dropdown-item" href="{% url 'course_materials' %}">Учебные материалы курсов</a>
+                            <a class="dropdown-item" href="{% url 'videoconf_materials' %}">Материалы видеоконференций, вебинаров</a>
                         </div>
 
                         <a class="dropdown-item submenu" href="{% url 'session' %}">СЕССИОННОЕ ОБУЧЕНИЕ</a>
 
                         <div class="dropdown-menu">
-			                <a class="dropdown-item" href="#">Курсы повышения квалификации</a>
-                            <a class="dropdown-item" href="#">ГУМО</a>
-                            <a class="dropdown-item" href="#">Дистанционное обучение</a>
-                            <a class="dropdown-item" href="#">Конференции</a>
+			                <a class="dropdown-item" href="{% url 'courses' %}">Курсы повышения квалификации</a>
+                            <a class="dropdown-item" href="{% url 'gumo' %}">ГУМО</a>
+                            <a class="dropdown-item" href="{% url 'remote' %}">Дистанционное обучение</a>
+                            <a class="dropdown-item" href="{% url 'konferences' %}">Конференции</a>
                         </div>
                     </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ПРОФИли участников
+                        <span style="vertical-align: sub"><strong><span style="vertical-align: sub">ПРОФИ</span></strong>ли участников</span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -104,17 +101,6 @@
             </div>
         </nav>
 
-        <div class="view">
-            <div class="mask rgba-black-strong">
-                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-                    <div class="row d-flex justify-content-center text-center">
-                        <div class="col-md-10">
-                            <h2 class="display-4 font-weight-bold text-white pt-5 mb-2">КОНКУРСЫ</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
     <main class="mt-5">
         <div class="container">

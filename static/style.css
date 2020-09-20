@@ -14,7 +14,7 @@ header {
 }
 
 #intro_dif_image {
-    background: url(./img/cutted_image.jpg) no-repeat center center fixed;
+    background: url(img/cutted_image.jpg) no-repeat center top fixed;
     background-size: cover;
     height: 30%;
 }
@@ -208,4 +208,35 @@ TH {
 
 TD {
     border-bottom: 1px solid black; /* Линия снизу */
+}
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 0;
+}
+
+footer > a {
+    text-decoration: none;
+    color: black;
+}
+
+footer > a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+footer > a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.part {
+    font-size: 2vw;
+    padding: .5em;
+    background: #f8f9fa;
+    text-align: center;
+    height: 100%;
 }

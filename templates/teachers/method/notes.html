@@ -22,33 +22,31 @@
     {% bootstrap_javascript %}
     {% bootstrap_css %}
     <title>Musica Integra</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../../../static/style.css">
     <meta name="yandex-verification" content="f651d4e5b1670abc" />
 </head>
 <body>
-    <header id="intro">
+    <header id="intro_dif_image">
         <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light scrolling-navbar" style="min-height: 80px;">
             <a class="navbar-brand" href="{% url 'main' %}">Musica Integra</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
             </button><div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        пространство ВДОХНОВЕНИЯ
+                        <span style="vertical-align: sub">пространство <strong>ВДОХНОВЕНИЯ</strong></span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'inspiration' %}">пространство ВДОХНОВЕНИЯ</a>
-                        <a class="dropdown-item" href="{% url 'not_ready' %}">МУЗЫКА</a>
+                        <a class="dropdown-item" href="{% url 'music' %}">МУЗЫКА</a>
                         <a class="dropdown-item" href="{% url 'not_ready' %}">МЕДИА</a>
                     </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        человек ИГРАЮЩИЙ
+                        <span style="vertical-align: sub">человек <strong>ИГРАЮЩИЙ</strong></span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'playing' %}">человек ИГРАЮЩИЙ</a>
                         <a class="dropdown-item submenu" href="{% url 'children' %}">ДЕТСКОЕ ТВОРЧЕСТВО</a>
 
                         <div class="dropdown-menu">
@@ -63,11 +61,10 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        педагогиУМ
+                        <span style="vertical-align: sub">педагоги<strong><span style="vertical-align: super">УМ</span></strong></span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'teachers' %}">педагогиУМ</a>
                         <a class="dropdown-item submenu" href="{% url 'not_ready' %}">МЕТОДИЧЕСКИЕ МАТЕРИАЛЫ</a>
 
                         <div class="dropdown-menu">
@@ -91,7 +88,7 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ПРОФИли участников
+                        <span style="vertical-align: sub"><strong><span style="vertical-align: sub">ПРОФИ</span></strong>ли участников</span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -103,34 +100,38 @@
             </div>
         </nav>
 
-        <div class="view">
-            <div class="mask rgba-black-strong">
-                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-                    <div class="row d-flex justify-content-center text-center">
-                        <div class="col-md-10">
-                            <h2 class="display-4 font-weight-bold text-white pt-5 mb-2">MUSICA INTEGRA</h2>
-                            <h4 class="text-white my-4">Образовательный музыкальный проект для преподавателей клавишного синтезатора</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
     <main class="mt-5">
         <div class="container">
             <section id="best-features" class="center-text">
-                <h2 class="mb-5 font-weight-bold">Musica Integra</h2>
+                <h2 class="mb-5 font-weight-bold">НОТНЫЕ ПОСОБИЯ</h2>
                 <div class="row d-flex justify-content-center mb-4">
                     <div class="col-md-8">
+                        <p>
+                            <img src="../../../static/img/notes/Без%20заголовка.png" alt="Сборник 1" width="170">
+                            <img src="../../../static/img/notes/_2%20часть%20Обучая,%20обуч_page-0001.jpg" alt="Сборник 2" width="170">
+                            <img src="../../../static/img/notes/_3%20часть%20Обучая%20обуч.jpg" alt="Сборник 3" width="170">
+                            <img src="../../../static/img/notes/_4%20часть%20Обчая,%20обуч.jpg" alt="Сборник 4" width="170">
+                        </p>
                         <p class="grey-text">
-                        Нам нравится многозначное понятие MUSICA INTEGRA, этимологически связанное с латинским словом INTEGER - цельный, совершенный, нетронутый, непознанный.
-Есть латинское выражение “рratum integrum” – «некошеный луг». А есть знакомое русское
-«поле непаханое». Как верно оно отражает объем работы преподавателя класса синтезатора! И в планах включения (ИНТЕГРАЦИИ) в персональный дидактический набор новой музыки.
-И в планах индивидуального освоения постоянно обновляющихся цифровых и, соответственно, педагогических технологий.
-Мы создаем это пространство, чтобы воодушевить коллег-музыкантов гениальной музыкой,
-потрясающими аранжировками и возможностями воплотить эти замыслы на своем синтезаторе.
-Мы собираем удивительные, неформальные и неформатные продукты педагогического творчества.
-                            Мы делимся опытом и объединяем единомышленников, чтобы вместе создавать нечто INTEGER (цельное, безупречное) под названием ОБУЧЕНИЕ МУЗЫКЕ НА ЭЛЕКТРОННЫХ МУЗЫКАЛЬНЫХ ИНСТРУМЕНТАХ
+                            Давлетова К., Майорова Е. Обучая, обучаюсь. Учебно-методический комплекс в четырех частях для начинающих преподавателей класса клавишного синтезатора и их учеников. СПб.: Изд-во «Союз художников», 2016-2019 г
+                        </p>
+                        <p>
+                            Если у вас появился электронный клавишный инструмент, и вы раздумываете, как с ним наладить общение, обращайтесь к образовательной серии К. Давлетовой и Е. Майоровой «Обучая, обучаюсь» (выпуски 1-4).Это единственный подробнейший навигатор по музыкальной области под названием «Клавишный синтезатор».
+                            Шаг за шагом «Обучая, обучаюсь» (от латинского крылатого выражения «Docenti Docentis» - куда же нам без латыни) учит не только осваивать инструмент, но и погружаться в звуковые пространства от барокко до рока, от этники до электроники. Без привлечения других музыкантов, без посещения дополнительных дисциплин. Только синтезатор!
+                        </p>
+
+                        <p>
+                            В четырех выпусках Серии подобрана и систематизирована увлекательная и современная информация от донотного знакомства с музыкой до предпрофессионального.<br/>
+                            <strong>Выпуск 1</strong> – это первые музыкальные шаги. Пособие предлагает сначала «играть» без нот. Потом учит нотной грамоте. Потом предлагает играть простые композиции в разных режимах инструмента. Затем вы можете свою музыку записать и пересылать друзьям.<br/>
+                            <strong>Выпуск 2</strong> – это середина обучения. Задачи постепенно усложняются. Но и ваш музыкальный опыт углубляется! На материале этого сборника можно научиться редактировать свою музыку, используя пресетные установки (те, что заложены в синтезаторе). А сколько новой музыкальной информации можно получить! Сколько прекрасной музыки послушать, пользуясь навигатором под названием «Рекомендации»<br>
+                            <strong>Выпуск 3</strong> – это вершина, «зенит». Вы без страха сможете записывать и использовать пользовательские параметры – свои голоса (!), свои музыкальные стили (!), свои неповторимые композиции, аранжировки и сочинения.<br/>
+                            <strong>Выпуск 4</strong> – это системное руководство по изучению музыки с помощью этих сборников – ПРОГРАММА. Она описывает «как», «когда», «сколько» и «зачем» заниматься той или иной музыкальной работой на синтезаторе.<br/>
+                        </p>
+                        <p>
+                            «Обучая, обучаюсь» доказывает, что серьезно учиться музыке можно и на клавишном синтезаторе также!<br/>
+                            Каждый музыкальный пример сопровождается рекомендациями по аранжировке, исполнению и записи на синтезаторах разного модельного ряда<br/>
+                            А музыкальные педагоги могут взять на вооружение Программу обучения игре на синтезаторе («Обучая, обучаюсь - 4»), чтобы вместе со своими учениками путешествовать по прекрасному миру музыки.<br/>
                         </p>
                     </div>
                 </div>

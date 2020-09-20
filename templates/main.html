@@ -32,23 +32,21 @@
             </button><div class="collapse navbar-collapse" id="navbarNavDropdown"><ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        пространство ВДОХНОВЕНИЯ
+                        <span style="vertical-align: sub">пространство <strong>ВДОХНОВЕНИЯ</strong></span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'inspiration' %}">пространство ВДОХНОВЕНИЯ</a>
-                        <a class="dropdown-item" href="{% url 'not_ready' %}">МУЗЫКА</a>
+                        <a class="dropdown-item" href="{% url 'music' %}">МУЗЫКА</a>
                         <a class="dropdown-item" href="{% url 'not_ready' %}">МЕДИА</a>
                     </div>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        человек ИГРАЮЩИЙ
+                        <span style="vertical-align: sub">человек <strong>ИГРАЮЩИЙ</strong></span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'playing' %}">человек ИГРАЮЩИЙ</a>
                         <a class="dropdown-item submenu" href="{% url 'children' %}">ДЕТСКОЕ ТВОРЧЕСТВО</a>
 
                         <div class="dropdown-menu">
@@ -63,11 +61,10 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        педагогиУМ
+                        <span style="vertical-align: sub">педагоги<strong><span style="vertical-align: super">УМ</span></strong></span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{% url 'teachers' %}">педагогиУМ</a>
                         <a class="dropdown-item submenu" href="{% url 'not_ready' %}">МЕТОДИЧЕСКИЕ МАТЕРИАЛЫ</a>
 
                         <div class="dropdown-menu">
@@ -91,7 +88,7 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ПРОФИли участников
+                        <span style="vertical-align: sub"><strong><span style="vertical-align: sub">ПРОФИ</span></strong>ли участников</span>
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -119,17 +116,16 @@
     <main class="mt-5">
         <div class="container">
             <section id="best-features" class="center-text">
-                <h2 class="mb-5 font-weight-bold">Musica Integra</h2>
+                <h2 class="mb-5"><i>Нам нравится многозначное понятие MUSICA INTEGRA, этимологически связанное с латинским словом INTEGER - цельный, совершенный, нетронутый, непознанный.</i></h2>
                 <div class="row d-flex justify-content-center mb-4">
                     <div class="col-md-8">
                         <p class="grey-text">
-                        Нам нравится многозначное понятие MUSICA INTEGRA, этимологически связанное с латинским словом INTEGER - цельный, совершенный, нетронутый, непознанный.
-Есть латинское выражение “рratum integrum” – «некошеный луг». А есть знакомое русское
-«поле непаханое». Как верно оно отражает объем работы преподавателя класса синтезатора! И в планах включения (ИНТЕГРАЦИИ) в персональный дидактический набор новой музыки.
-И в планах индивидуального освоения постоянно обновляющихся цифровых и, соответственно, педагогических технологий.
-Мы создаем это пространство, чтобы воодушевить коллег-музыкантов гениальной музыкой,
-потрясающими аранжировками и возможностями воплотить эти замыслы на своем синтезаторе.
-Мы собираем удивительные, неформальные и неформатные продукты педагогического творчества.
+                            Есть латинское выражение “рratum integrum” – «некошеный луг». А есть знакомое русское
+                            «поле непаханое». Как верно оно отражает объем работы преподавателя класса синтезатора! И в планах включения (ИНТЕГРАЦИИ) в персональный дидактический набор новой музыки.
+                            И в планах индивидуального освоения постоянно обновляющихся цифровых и, соответственно, педагогических технологий.
+                            Мы создаем это пространство, чтобы воодушевить коллег-музыкантов гениальной музыкой,
+                            потрясающими аранжировками и возможностями воплотить эти замыслы на своем синтезаторе.
+                            Мы собираем удивительные, неформальные и неформатные продукты педагогического творчества.
                             Мы делимся опытом и объединяем единомышленников, чтобы вместе создавать нечто INTEGER (цельное, безупречное) под названием ОБУЧЕНИЕ МУЗЫКЕ НА ЭЛЕКТРОННЫХ МУЗЫКАЛЬНЫХ ИНСТРУМЕНТАХ
                         </p>
                     </div>
@@ -137,6 +133,12 @@
             </section>
         </div>
     </main>
+    <footer>
+        <a href="{% url 'inspiration' %}"><div class="part"><span style="vertical-align: sub">пространство <strong>ВДОХНОВЕНИЯ</strong></span></div></a>
+        <a href="{% url 'playing' %}"><div class="part"><span style="vertical-align: sub">человек <strong>ИГРАЮЩИЙ</strong></span></div></a>
+        <a href="{% url 'teachers' %}"><div class="part"><span style="vertical-align: sub">педагоги<strong><span style="vertical-align: super">УМ</span></strong></span></div></a>
+        <a href="{% url 'not_ready' %}"><div class="part"><span style="vertical-align: sub"><strong><span style="vertical-align: sub">ПРОФИ</span></strong>ли участников</span></div></a>
+    </footer>
     <script src="../static/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
